@@ -1,0 +1,55 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+ .product-grid {
+    display: grid;
+    grid-gap: 20px;
+}
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+.editor-product
+{
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+.product__image {
+    max-width: 100%;
+}
+.product__title{
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size:14px !important;
+}
+
+.product__price {
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding: 0;
+    border-radius: 100px;
+    background: black;
+    color: white;
+    width:100%;
+}
+
+.product__price span
+{
+    font-size:12px
+}
+
+.product__custom_field
+{
+    font-size:12px;
+}
