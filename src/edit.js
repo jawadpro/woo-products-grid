@@ -5,19 +5,16 @@ import { __experimentalGrid as Grid } from '@wordpress/components';
 
 const Edit = ( { attributes, setAttributes } ) => {
 
-	const options = [];
 	const { data, limit , column , showImage , showPrice , acf } = attributes;  
 	
 	//Get All Products
 	const products = useSelect((select) => {
-        return select('core').getEntityRecords('postType', 'product' , { per_page: limit , _embed: true, meta: '*'
-	});
-    }, []);
+        return select('core').getEntityRecords('postType', 'product' , { per_page: limit , _embed: true});
+    }, [limit, column , showImage , showPrice, acf]);
 
 	if( products )
 	{
 		setAttributes( { data: products } );
-		console.log(products);
 	}
 
 	const onColChange = ( value ) => {

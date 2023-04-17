@@ -1,1 +1,58 @@
-.product-grid{grid-gap:20px;display:grid}.product{align-items:center;display:flex;flex-direction:column}.editor-product,.product{border:1px solid #ddd;padding:20px;text-align:center}.product__image{max-width:100%}.product__title{font-size:14px!important;margin-bottom:0;margin-top:10px}.product__price{background:#000;border-radius:100px;color:#fff;margin-bottom:0;margin-top:10px;padding:0;width:100%}.product__custom_field,.product__price span{font-size:12px}
+/*!***************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/style.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.product-grid {
+  display: grid;
+  grid-gap: 20px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+}
+
+.editor-product {
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+}
+
+.product__image {
+  max-width: 100%;
+}
+
+.product__title {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-size: 14px !important;
+}
+
+.product__price {
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding: 0;
+  border-radius: 100px;
+  background: black;
+  color: white;
+  width: 100%;
+}
+
+.product__price span {
+  font-size: 12px;
+}
+
+.product__custom_field {
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=style-index.css.map*/
